@@ -4,7 +4,6 @@ h1 {
 }
 
 h1, .sub-h1 {
-    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -42,7 +41,14 @@ ul li.dessert::marker {
 }
 
 img {
-    /* figure out how to center img */
+    width: 100%;
+    min-width: 400px;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 4px;
+    border: bisque solid 4px;
 }
 
 h2 {
@@ -52,8 +58,10 @@ h2 {
 }
 
 h2, p, ol li {
-    padding-left: 10px;
-    margin-left: 10px;
+    margin: 20px 10px;
+    padding: 0 10px;
+    /* padding-left: 10px;
+    margin-left: 10px; */
 }
 
 h3 {
@@ -71,12 +79,13 @@ ul.ingred li, p, ol li {
 }
 
 ol li {
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 20px;
 }
 
 ol {
     padding-bottom: 30px;
+    padding-right: 10px;
 }
 
 ul.ingred li ul li {
@@ -86,7 +95,7 @@ ul.ingred li ul li {
 }
 
 div ol li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 div ol li p {
@@ -94,6 +103,62 @@ div ol li p {
     padding-left: 0;
 }
 
-/* body {
+body {   
     background-color: #473535;
-} */
+    /* background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1500px auto;
+    background-color: rgba(255,255,255,0.35);
+    background-blend-mode: luminosity; */
+    /* opacity: 0.8; */
+}
+
+.site-title, 
+.recipe-box, 
+.recipe-title, 
+.recipe {
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.site-title, 
+.recipe-title {
+    background-color: bisque;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.recipe-box {
+    max-width: 500px;   
+}
+
+.recipe-box, 
+.recipe {
+    background-color: hsl(33, 80%, 92%);
+    border: rgb(65, 36, 36) double 10px;
+}
+
+.recipe {
+    padding: 15px 15px;
+    margin: 20px auto;
+}
+
+.home-link {
+    font-size: 20px;
+    color: rgba(255,228,196,0.5);
+    margin: 5px;
+    padding-bottom: 25px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
